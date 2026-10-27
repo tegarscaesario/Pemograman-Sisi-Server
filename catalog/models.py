@@ -16,6 +16,9 @@ class Course(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     class Meta:
         ordering = ["code"]
+        indexes = [
+            models.Index(fields=["is_active", "title"]),
+        ]
     def __str__(self):
         return f"{self.code} - {self.title}"
 
