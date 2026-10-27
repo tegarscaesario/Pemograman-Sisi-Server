@@ -40,12 +40,11 @@ Dibangun dengan Django 5.2 dan PostgreSQL 17. Seluruh runtime dijalankan di Dock
 File `.env` tidak ikut repository. Buat sendiri di root project:
 
 ```
-DB_NAME=lms_db
-DB_USER=lms_user
-DB_PASSWORD=lms_password
+DB_NAME= #sample lms_db
+DB_USER= #sample lms_user
+DB_PASSWORD= #sample lms_password
 ```
 
-Nilai di atas hanya untuk development lokal. Jangan commit credential yang sebenarnya.
 
 ### 2. Build dan jalankan container
 
